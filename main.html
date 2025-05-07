@@ -33,7 +33,7 @@
             margin-top: 20px;
         }
 
-        .books-container{
+        .languages-container{
 
             display:flex;
             justify-content:center;
@@ -46,10 +46,14 @@
         .hero-container {
 
             background-color: #547792;
-    color: #ECEFCA;
-    padding: 20px;
-    text-align: center;
-    font-family: "Cantata One", serif;
+            color: #ECEFCA;
+            padding: 20px;
+            font-family: "Cantata One", serif;
+            border-radius: 30px;
+            margin: 30px;
+            width: 80%;
+            display:inline-block;
+            text-align: center;
         }
 
         .cantata-one-regular {
@@ -63,6 +67,10 @@
             font-weight: 400;
             font-style: normal;
         }
+        .language{
+
+            background-color:#547792
+        }
 
 
     </style>
@@ -70,9 +78,10 @@
 
     <section id = "topnav">
         <div class = "topnav-container">
+            <p><a href="main.html" style = "color:#ECEFCA;"> Home</a></p>
             <p><a href="about.html" style = "color:#ECEFCA;">About Me</a></p>
-            <p><a href = "resume.html" style = "color:#ECEFCA;">Resume</a></p>
-            <p><a href="https://whubzz.github.io/Portfolio/" style = "color:#ECEFCA;">Portfolio</a>
+            <p><a href = "resume.html" style = "color:#ECEFCA;">Projects</a></p>
+            <p><a href="https://whubzz.github.io/Portfolio/" style = "color:#ECEFCA;">Languages</a>
             <p><a href="https://whubzz.github.io/Portfolio/" style = "color:#ECEFCA;">Contact</a></p>
         </div>
     </section>
@@ -81,47 +90,40 @@
         <section id="hero">
             <main>
               <container class = "hero-container">
-                <h1 style = "text-align: center; font-size: 100px;">Hello</h1>
-                <h2 style = "text-align: center;">My name is:</h2>
-                <h3 style = "text-align: center;">Mikael</h3>
-                <img src="/assets/Selfie.png" alt="" width="400" height="400" style = "border-radius: 50%; margin: 0 auto; display: block;">
-                <h4 style = "text-align: center;">I'm a web developer</h4>
+
+                <img class = "id-img" src="/assets/selfie2.png" alt="" width="300" height="375" style = "border-radius: 20%; margin: 0 auto; float:left; padding: 20px;">
+                <h1 class = "cantata-one-regular">Hello, I'm Mikael</h1>
+                <h2 class = "abril-fatface-regular">A Web Developer</h2>
+                <p class = "cantata-one-regular" style = "font-size:20px">I am a web developer with a passion for creating dynamic and responsive websites. I have experience in HTML, CSS, JavaScript, and Python. I am always eager to learn new technologies and improve my skills.</p>
+
+                </container>
+                
         </section>
 
         <section id = "projects">
-            <h2>My Projects</h2>
-            <p>Here are some of the projects I've worked on:</p>
+            <h1>Projects</h1>
+            
             <ul></ul>
         </section>
 
-        <section id = "books">
-            <h2>My favorite books</h2>
-            <p>I've been reading a lot this past year and these are some of my favorite books that I've read so far.</p>
-        <container class = "books-container">
-
-            <img src = "assets/50thlaw.jpg" alt = "The 50th Law of Power" width = "200px" height = "300px">
-            <img src="assets/ultralearning.jpg" alt = "Ultra Learning" width = "200px" height = "300px">
-            <img src="assets/deepwork.jpg" alt = "Deep work" width = "200px" height = "300px">
-            <img src ="assets/thegameoflife.jpg" alt = "The Game of Life and How to Play It" width = "200px" height = "300px">
-            <img src = "assets/perfectteacher.jpg" alt = "Words of my perfect teacher" width = "200px" height = "300px">
-            <img src = "assets/breakinghabit.jpg" alt = "Breaking the Habit of Being Yourself" width = "200px" height = "300px">
-        
-        </container>
-
-        </section>
-
-
+        <section class = "language">
+            <h1 style ="text-align:center; font-size: 3rem;">Languages</h1>
+            <container class = "languages-container">
+                <img src = "assets/html.png" alt = "HTML" width = "200" height = "200">
+                <img src = "assets/css.png" alt = "CSS" width = "200" height = "200">
+                <img src = "assets/java.png" alt = "JavaScript" width = "200" height = "200">
+                <img src = "assets/python.png" alt = "Python" width = "200" height = "200">
+            </container>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    </main>
     <footer>
         <section id="contact">
-            <h2>Contact Me :)</h2>
-            <p>Email: </br>
-                Phone: </p>
+            <h2>Contact Me</h2>
+            <p>Email: MikaelCandelaria3323@yahoo.com </br>
+                 </p>
 
         </section>
         <p>&copy; 2025 All rights reserved.</p>
     </footer>
 </body>
-
+</main>
 </html>
